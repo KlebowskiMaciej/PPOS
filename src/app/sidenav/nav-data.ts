@@ -1,23 +1,25 @@
+import { faBook, faCheckSquare, faShoppingBasket, faUser } from "@fortawesome/free-solid-svg-icons";
+
 export const navbarData = [
 
   {
-    routeLink: 'products',
-    icon: 'faShoppingBasket',
-    label: 'Produkty'
+    url: 'products',
+    icon: faShoppingBasket,
+    title: 'Produkty'
   },
   {
-    routeLink: 'evidence',
-    icon: 'faUser',
-    label: 'Ewidencja'
+    url: 'evidence',
+    icon: faUser,
+    title: 'Ewidencja'
   },
   {
-    routeLink: 'checklist',
-    icon: 'faCheckSquare',
-    label: 'checklist'
+    url: 'checklist',
+    icon: faCheckSquare,
+    title: 'Checklista'
   },
   {
-    routeLink: 'docs',
-    icon: 'faBook',
-    label: 'docs'
+    url: 'docs',
+    icon: faBook,
+    title: 'Dokumenty'
   }
 ];
