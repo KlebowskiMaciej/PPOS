@@ -14,12 +14,13 @@ import { ISideNavToggle } from './ISideNavToggle';
   imports: [CommonModule,RouterModule,FaIconComponent],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss',
+
 })
 
 export class SidenavComponent implements OnInit{
 
   @Output() onToggleSideNav: EventEmitter<ISideNavToggle> = new EventEmitter();
-  collapsed = true;
+  collapsed = false;
   screenWith = 0;
   navData = navbarData;
 
