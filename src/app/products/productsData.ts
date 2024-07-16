@@ -1,21 +1,84 @@
 import { faBook, faCheckSquare, faShoppingBasket, faUser } from "@fortawesome/free-solid-svg-icons";
+import { IProduct } from "./IProduct";
 
-export const ProductsData = [
+export const ProductsData: IProduct[] = [
 
   {
     title: 'KitKat',
-    text: '5 PLN'
+    price: 5,
+    available: 10,
+    ean: '123456789'
   },
   {
     title: 'Donuts',
-    text: '3 PLN'
+    price: 3,
+    available: 10,
+    ean: '123456789'
   },
   {
     title: 'zozol',
-    text: '2 PLN'
+    price: 2,
+    available: 10,
+    ean: '123456789'
   },
   {
     title: 'water',
-    text: '10 PLN'
+    price: 10,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'Donuts',
+    price: 3,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'zozol',
+    price: 2,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'water',
+    price: 10,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'Donuts',
+    price: 3,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'zozol',
+    price: 2,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'water',
+    price: 10,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'Donuts',
+    price: 3,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'zozol',
+    price: 2,
+    available: 10,
+    ean: '123456789'
+  },
+  {
+    title: 'water',
+    price: 10,
+    available: 10,
+    ean: '123456789'
   }
 ];

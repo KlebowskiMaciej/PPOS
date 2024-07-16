@@ -1,0 +1,48 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Adjust minmax value to fit your needs
+  gap: 1rem; // Adjust the gap as needed
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 0; // Remove margin as gap will handle the spacing
+  box-shadow: 0 .25rem .5rem #e6edef;
+}
+
+.card-button {
+  background-color: #fff;
+  border: none;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .card-body {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-price {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .card-number-of-available {
+    font-size: 0.875rem;
+    color: #6c757d; // Optional: add a different color for available count
+  }
+}

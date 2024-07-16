@@ -1,7 +1,11 @@
-<h1>Products works!</h1>
-<div class="card"*ngFor="let data of productsData">
-  <div class="card-head">{{data.title}}</div>
-  <div class="card-body">
-    {{data.text}}
+<div class="card-container">
+  <div class="card" *ngFor="let data of productsData">
+    <button class="card-button"(click)="addToBill(data)">
+      <div class="card-title">{{data.title}}</div>
+      <div class="card-body">
+        <div class="card-price">{{data.price}} zł</div>
+        <div class="card-number-of-available">{{data.available}}</div>
+      </div>
+    </button>
   </div>
 </div>
