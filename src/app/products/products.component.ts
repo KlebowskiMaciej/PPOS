@@ -22,11 +22,12 @@ export class ProductsComponent {
     console.log(`Title: ${product.title}, Price: ${product.price}, Available: ${product.available}`);
     if (product.available > 0) {
       product.available -= 1;
-      this.billItems.push(product);
+      this.billItems.push({...product});
     } else {
       console.log(`${product.title} is out of stock`);
     }
   }
+
   toggleScanner(): void {
     this.showScanner = !this.showScanner;
   }
@@ -55,7 +56,13 @@ export class ProductsComponent {
   }
 
   removeFromBill(product: IProduct): void {
-    this.billItems = this.billItems.filter(item => item !== product);
-    product.available += 1; // Restore the stock
+    const index = this.billItems.findIndex(item => item.ean === product.ean);
+    if (index !== -1) {
+      this.billItems.splice(index, 1);
+      const originalProduct = this.productsData.find(p => p.ean === product.ean);
+      if (originalProduct) {
+        originalProduct.available += 1;
+      }
+    }
   }
 }

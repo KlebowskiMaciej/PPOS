@@ -7,19 +7,19 @@ export const ProductsData: IProduct[] = [
     title: 'KitKat',
     price: 5,
     available: 10,
-    ean: '123456789'
+    ean: '123'
   },
   {
     title: 'Donuts',
     price: 3,
     available: 10,
-    ean: '123456789'
+    ean: '324'
   },
   {
     title: 'zozol',
     price: 2,
     available: 10,
-    ean: '123456789'
+    ean: '1111111'
   },
   {
     title: 'woda zywiec',
@@ -31,54 +31,6 @@ export const ProductsData: IProduct[] = [
     title: 'Donuts',
     price: 3,
     available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'zozol',
-    price: 2,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'water',
-    price: 10,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'Donuts',
-    price: 3,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'zozol',
-    price: 2,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'water',
-    price: 10,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'Donuts',
-    price: 3,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'zozol',
-    price: 2,
-    available: 10,
-    ean: '123456789'
-  },
-  {
-    title: 'water',
-    price: 10,
-    available: 10,
-    ean: '123456789'
+    ean: '7777'
   }
 ];

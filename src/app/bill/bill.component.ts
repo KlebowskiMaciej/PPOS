@@ -22,8 +22,7 @@ export class BillComponent {
   }
 
   remove(item: any): void {
-    const quantity = item.quantity || 1; // Zakładamy, że każdy produkt ma pole quantity
-    this.removeItem.emit({item, quantity});
+    this.removeItem.emit(item);
   }
 
   getTotal(): number {
