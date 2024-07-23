@@ -28,6 +28,23 @@
   border-bottom: 1px solid #e6edef;
 }
 
+.bill-container li button {
+  background-color: #fff;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: .25rem;
+  transition: all .3s ease;
+  box-shadow: 0 .25rem .5rem #e6edef;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .bill-container .total {
   margin-top: 1rem;
   font-size: 1.25rem;

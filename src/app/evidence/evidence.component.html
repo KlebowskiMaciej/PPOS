@@ -1,1 +1,21 @@
-<h1>Ewidence works!</h1>
+<div class="evidence-container">
+  <button *ngIf="!nickname" (click)="setNickname()">Set Nickname</button>
+  <button *ngIf="nickname && !startTime" (click)="startTimer()" [disabled]="!nickname">Start</button>
+  <button *ngIf="startTime" (click)="stopTimer()">Stop</button>
+
+  <div *ngIf="nickname">
+    <p>Nickname: {{ nickname }}</p>
+  </div>
+
+  <div *ngIf="startTime">
+    <p>Started at: {{ formatTime(startTime) }}</p>
+  </div>
+
+  <div *ngIf="endTime">
+    <p>Stopped at: {{ formatTime(endTime) }}</p>
+  </div>
+
+  <div *ngIf="elapsedTime">
+    <p>Total work time for {{ nickname }}: {{ elapsedTime }} on {{ currentDate }}</p>
+  </div>
+</div>

@@ -50,12 +50,12 @@ export class ProductsComponent {
         console.log(`${product.title} is out of stock`);
       }
     } else {
-      console.log(`Product with EAN ${event} not found`);
+      console.log(`Product with EAN ${event} not found`);``
     }
   }
 
   removeFromBill(product: IProduct): void {
     this.billItems = this.billItems.filter(item => item !== product);
-    product.available += 1;
+    product.available += 1; // Restore the stock
   }
 }
