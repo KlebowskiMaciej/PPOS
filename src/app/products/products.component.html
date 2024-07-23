@@ -1,11 +1,25 @@
-<div class="card-container">
-  <div class="card" *ngFor="let data of productsData">
-    <button class="card-button"(click)="addToBill(data)">
-      <div class="card-title">{{data.title}}</div>
-      <div class="card-body">
-        <div class="card-price">{{data.price}} zł</div>
-        <div class="card-number-of-available">{{data.available}}</div>
+<div class="main-container">
+  <div class="content-container">
+    <div class="controls">
+      <button (click)="toggleScanner()">scanner</button>
+    </div>
+
+    <div *ngIf="showScanner" class="scanner-container">
+      <zxing-scanner [formats]="allowedFormats" (scanSuccess)="scanSuccessHandler($event)"></zxing-scanner>
+    </div>
+
+    <div *ngIf="!showScanner" class="card-container">
+      <div class="card" *ngFor="let data of productsData">
+        <button class="card-button" (click)="addToBill(data)">
+          <div class="card-title">{{data.title}}</div>
+          <div class="card-body">
+            <div class="card-price">{{data.price}} zł</div>
+            <div class="card-number-of-available">{{data.available}}</div>
+          </div>
+        </button>
       </div>
-    </button>
+    </div>
   </div>
+
+  <app-bill [billItems]="billItems" (removeItem)="removeFromBill($event)"></app-bill>
 </div>

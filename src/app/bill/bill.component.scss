@@ -1,0 +1,34 @@
+.bill-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: -0.25rem 0 .5rem #e6edef;
+  overflow-y: auto;
+}
+
+.bill-container h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.bill-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bill-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6edef;
+}
+
+.bill-container .total {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}

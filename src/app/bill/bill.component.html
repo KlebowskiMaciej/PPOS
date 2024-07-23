@@ -1,0 +1,12 @@
+<div class="bill-container">
+  <h2>Bill</h2>
+  <ul>
+    <li *ngFor="let item of billItems">
+      {{item.title}} - {{item.price}} zł
+      <button (click)="removeFromBill(item)">Cut</button>
+    </li>
+  </ul>
+  <div class="total">
+    <strong>Total: </strong> {{getTotal()}} zł
+  </div>
+</div>

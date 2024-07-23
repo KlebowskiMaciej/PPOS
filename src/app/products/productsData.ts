@@ -22,10 +22,10 @@ export const ProductsData: IProduct[] = [
     ean: '123456789'
   },
   {
-    title: 'water',
+    title: 'woda zywiec',
     price: 10,
     available: 10,
-    ean: '123456789'
+    ean: '5900541001021'
   },
   {
     title: 'Donuts',

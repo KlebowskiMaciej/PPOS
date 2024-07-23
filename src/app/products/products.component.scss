@@ -1,3 +1,12 @@
+.main-container {
+  display: flex;
+}
+
+.content-container {
+  flex: 1;
+  padding-right: 300px; // Width of the bill container to prevent overlap
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Adjust minmax value to fit your needs
@@ -45,4 +54,69 @@
     font-size: 0.875rem;
     color: #6c757d; // Optional: add a different color for available count
   }
+}
+
+.controls {
+  margin-bottom: 1rem;
+  text-align: center;
+
+  button {
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: all .3s ease;
+    box-shadow: 0 .25rem .5rem #e6edef;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.scanner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; // Adjust as needed
+  background-color: #f8f9fa;
+}
+
+.bill-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: -0.25rem 0 .5rem #e6edef;
+  overflow-y: auto;
+}
+
+.bill-container h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.bill-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bill-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6edef;
+}
+
+.bill-container .total {
+  margin-top: 1rem;
+  font-size: 1.25rem;
 }
